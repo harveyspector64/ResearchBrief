@@ -20,6 +20,21 @@
         .fade-in-section {
             animation: fadeIn 0.8s ease-out forwards;
         }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -32,7 +47,7 @@
             <p class="mt-4 text-lg text-gray-600">A cinematic approach to evaluating generative video models, designed for Art Official.</p>
             <div class="mt-6 text-sm">
                 <p><span class="font-semibold">To:</span> Tatiana & Nick St. Pierre</p>
-                <p><span class="font-semibold">From:</span> Brian Hightman</p>
+                <p><span class="font-semibold">From:</span> Brian [Your Last Name]</p>
                 <p><span class="font-semibold">Date:</span> June 7, 2025</p>
             </div>
         </header>
@@ -43,6 +58,29 @@
             <p class="text-lg text-gray-700 leading-relaxed">
                 Thank you for this opportunity. This framework translates a director's vision into a structured methodology for stress-testing AI video models. My approach treats each model as a nascent "digital filmmaker," testing not just for technical execution but for its potential as a true creative partner. Below is the proposed methodology, designed to be rigorous, insightful, and actionable.
             </p>
+        </section>
+
+        <!-- Video Embed Section -->
+        <section class="mb-16 fade-in-section" style="animation-delay: 0.1s;">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 border-l-4 border-indigo-500 pl-4">Conceptual Demo Reel</h3>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <div class="video-container rounded-lg">
+                    <!-- 
+                        HOW TO EMBED YOUR VIDEO:
+                        1. Upload your video to YouTube or Vimeo. Set its privacy to "Unlisted".
+                        2. Click the "Share" button on your video, then select "Embed".
+                        3. Copy the HTML code provided (it will start with `<iframe ...`).
+                        4. Paste that code here, replacing the placeholder iframe below.
+                    -->
+                    <iframe 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
         </section>
 
         <!-- Methodology & Workflow -->
@@ -154,15 +192,15 @@
                 <div class="flex items-start">
                     <div class="flex-shrink-0 w-12 h-12 bg-indigo-500 text-white rounded-full flex items-center justify-center font-bold text-lg">1</div>
                     <div class="ml-5">
-                        <h4 class="font-semibold text-lg">Phase 1: Testing & Analysis </h4>
-                        <p class="text-gray-600">Execute the full prompt matrix across all models. Evaluate and score every output using the rubric, capturing detailed notes on performance. Video generation is fast working from a prompt matrix, with most of the work is in preparation and notes/labeling. </p>
+                        <h4 class="font-semibold text-lg">Phase 1: Testing & Analysis</h4>
+                        <p class="text-gray-600">Execute the full prompt matrix across all models. Evaluate and score every output using the rubric, capturing detailed notes on performance.</p>
                     </div>
                 </div>
                  <div class="flex items-start">
                     <div class="flex-shrink-0 w-12 h-12 bg-indigo-500 text-white rounded-full flex items-center justify-center font-bold text-lg">2</div>
                     <div class="ml-5">
-                        <h4 class="font-semibold text-lg">Phase 2: Synthesis & Reporting </h4>
-                        <p class="text-gray-600">Analyze the data, edit the video highlight reel, and compile the Final Research Report with key findings and visual examples. A final report could be done in a day or two but a final video perhaps 1-2 mins showing highlights could really drive home the results and add another day or two to delivery. </p>
+                        <h4 class="font-semibold text-lg">Phase 2: Synthesis & Reporting</h4>
+                        <p class="text-gray-600">Analyze the data, edit the video highlight reel, and compile the Final Research Report with key findings and visual examples.</p>
                     </div>
                 </div>
             </div>
@@ -170,7 +208,7 @@
 
         <!-- Footer -->
         <footer class="mt-20 pt-8 border-t text-center text-gray-500 text-sm">
-            <p>&copy; 2025 Brian Hightman. All rights reserved.</p>
+            <p>&copy; 2025 Brian [Your Last Name]. All rights reserved.</p>
             <p class="mt-1">This document outlines a proposed research framework and does not contain proprietary information from Art Official.</p>
         </footer>
 
