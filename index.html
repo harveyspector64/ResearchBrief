@@ -3,69 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Video Model Evaluation</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Research Framework: AI Video Model Evaluation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Simple animation for section appearance */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-section {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Artist-Led Evaluation Framework for AI Video Models</h1>
-        <p>A research methodology by Brian Hightman</p>
-    </header>
+<body class="bg-gray-50 text-gray-800">
 
-    <section>
-        <h2>Introduction</h2>
-        <p>As an artist working daily with AI video models, my approach to research is both intuitive and methodical.
-        This framework reflects how I probe the creative and technical capacities of multi-modal tools through cinematic
-        logic, style stress-testing, and iterative prompt design.</p>
-    </section>
+    <div class="max-w-4xl mx-auto p-6 sm:p-8 md:p-12">
+        
+        <!-- Header -->
+        <header class="mb-12 border-b pb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">AI Video Model Research Framework</h1>
+            <p class="mt-4 text-lg text-gray-600">A cinematic approach to evaluating generative video models, designed for Art Official.</p>
+            <div class="mt-6 text-sm">
+                <p><span class="font-semibold">To:</span> Tatiana & Nick St. Pierre</p>
+                <p><span class="font-semibold">From:</span> Brian Hightman </p>
+                <p><span class="font-semibold">Date:</span> June 7, 2025</p>
+            </div>
+        </header>
 
-    <section>
-        <h2>Methodology</h2>
-        <ol>
-            <li>Define test themes: camera logic, style, physics</li>
-            <li>Design prompt variants across models</li>
-            <li>Generate clips & group by test type</li>
-            <li>Score and annotate: visual, motion, consistency</li>
-            <li>Compile findings with cinematic context</li>
-        </ol>
-    </section>
+        <!-- Introduction Section -->
+        <section class="mb-16 fade-in-section">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4 tracking-tight">A Director's Framework for AI Screen Tests</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Thank you for this opportunity. As an artist working daily with AI video models, my approach to research is both intuitive and methodical. This framework translates a director's vision into a structured methodology for stress-testing AI video models. My approach treats each model as a nascent "digital filmmaker," testing not just for technical execution but for its potential as a true creative partner. Below is the proposed methodology, designed to be rigorous, insightful, and actionable.
+            </p>
+        </section>
 
-    <section>
-        <h2>Prompt Matrix</h2>
-        <table>
-            <tr>
-                <th>Test</th><th>Camera Motion</th><th>Style</th><th>Prompt</th><th>Modality</th>
-            </tr>
-            <tr>
-                <td>1</td><td>Slow dolly in</td><td>Renaissance painting</td><td>Man sitting in candlelight study...</td><td>Text-to-video</td>
-            </tr>
-            <tr>
-                <td>2</td><td>Whip pan</td><td>Cyberpunk anime</td><td>Street chase, neon signs blur past...</td><td>Image-to-video</td>
-            </tr>
-        </table>
-    </section>
+        <!-- Methodology & Workflow -->
+        <section class="mb-16 fade-in-section" style="animation-delay: 0.2s;">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 border-l-4 border-indigo-500 pl-4">1. Methodology & Workflow</h3>
+            <div class="space-y-6">
+                <div>
+                    <h4 class="font-semibold text-lg text-gray-800">Philosophy</h4>
+                    <p class="text-gray-700 mt-1">Treat each model as a "Director of Photography." We provide the same scene direction (the prompt) and evaluate how they "shoot" it, testing for both technical execution and creative interpretation.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg text-gray-800">Step-by-Step Process</h4>
+                    <ol class="list-decimal list-inside mt-2 text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Establish 'Controlled Set':</strong> Use a curated set of base images (Midjourney v6) for Img-to-Video and a core prompt for Text-to-Video to ensure consistency.</li>
+                        <li><strong class="font-semibold">Execute 'Shot List':</strong> Systematically input test case prompts into each model, meticulously labeling and organizing all generated clips.</li>
+                        <li><strong class="font-semibold">Review 'Dailies':</strong> Evaluate each output against our rubric, combining quantitative scores with qualitative "Director's Notes."</li>
+                        <li><strong class="font-semibold">Synthesize for 'Final Cut':</strong> Compile findings into clear, digestible outputs for at-a-glance insights.</li>
+                    </ol>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg text-gray-800">Tool Stack</h4>
+                    <p class="text-gray-700 mt-1"><strong class="font-semibold">Platforms:</strong> Model A/B/C, Midjourney. <strong class="font-semibold">Organization:</strong> Google Sheets. <strong class="font-semibold">Presentation:</strong> This webpage, Loom, Adobe Premiere.</p>
+                </div>
+            </div>
+        </section>
 
-    <section>
-        <h2>Evaluation Rubric</h2>
-        <ul>
-            <li><strong>Temporal Coherence:</strong> 4/5 (slight flicker in shadows)</li>
-            <li><strong>Camera Logic:</strong> 5/5 (dolly motion is clean)</li>
-            <li><strong>Style Adherence:</strong> 3/5 (inconsistent color palette)</li>
-        </ul>
-    </section>
+        <!-- Prompt Matrix -->
+        <section class="mb-16 fade-in-section" style="animation-delay: 0.4s;">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 border-l-4 border-indigo-500 pl-4">2. Prompt Matrix (The "Shot List")</h3>
+            <div class="overflow-x-auto bg-white rounded-lg shadow">
+                <table class="w-full text-left text-sm">
+                    <thead class="bg-gray-100 border-b">
+                        <tr>
+                            <th class="p-4 font-semibold">Category</th>
+                            <th class="p-4 font-semibold">Cinematic Goal</th>
+                            <th class="p-4 font-semibold">Base Prompt & [Modifier]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="p-4 font-semibold text-indigo-600">Camera Control</td>
+                            <td class="p-4">Pan / Tilt / Zoom / Dolly</td>
+                            <td class="p-4 font-mono text-xs">`cinematic shot, a detective's desk.` <br> `[Slowly PAN LEFT to reveal a clue]`</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-4 font-semibold text-indigo-600">Style & Aesthetics</td>
+                            <td class="p-4">Genre & Artist Emulation</td>
+                            <td class="p-4 font-mono text-xs">`a car on a street at night.` <br> `[in the style of Blade Runner]`</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-4 font-semibold text-indigo-600">Physics & Motion</td>
+                            <td class="p-4">Object Interaction & Realism</td>
+                            <td class="p-4 font-mono text-xs">`a baseball is thrown at a window.` <br> `[The window SHATTERS on impact]`</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-semibold text-indigo-600">Character & Coherence</td>
+                            <td class="p-4">Emotion & Temporal Stability</td>
+                            <td class="p-4 font-mono text-xs">`close up on a character's face.` <br> `[expression subtly shifts from joy to sadness]`</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <!-- Evaluation Rubric -->
+        <section class="mb-16 fade-in-section" style="animation-delay: 0.6s;">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 border-l-4 border-indigo-500 pl-4">3. Evaluation Rubric</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h4 class="font-bold text-lg">Prompt Adherence</h4>
+                    <p class="text-gray-600 mt-1">Did the model understand the cinematic term (pan, dolly)? Did it capture the mood?</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h4 class="font-bold text-lg">Cinematic Quality</h4>
+                    <p class="text-gray-600 mt-1">Does it look like a "shot" or just a moving picture? Is composition strong?</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h4 class="font-bold text-lg">Technical Fidelity</h4>
+                    <p class="text-gray-600 mt-1">How severe are warping or flickering artifacts? Is motion smooth?</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h4 class="font-bold text-lg">Temporal Consistency</h4>
+                    <p class="text-gray-600 mt-1">Does a character's face remain stable? Do background objects morph?</p>
+                </div>
+            </div>
+             <p class="text-center mt-6 text-gray-600">Each metric is scored 1-5, supplemented by qualitative <strong class="font-semibold text-gray-800">"Director's Notes"</strong>.</p>
+        </section>
 
-    <section>
-        <h2>Timeline</h2>
-        <ul>
-            <li><strong>Day 1:</strong> Define test categories + aesthetic references</li>
-            <li><strong>Day 2:</strong> Prompt engineering + test generation</li>
-            <li><strong>Day 3:</strong> Analysis + visual layout</li>
-            <li><strong>Day 4:</strong> Final report polish + site publishing</li>
-        </ul>
-    </section>
+        <!-- Expected Outputs -->
+        <section class="mb-16 fade-in-section" style="animation-delay: 0.8s;">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 border-l-4 border-indigo-500 pl-4">4. Expected Outputs</h3>
+            <div class="space-y-4">
+                <p class="text-gray-700"><strong class="font-semibold text-gray-900">1. Visual Comparison Grid:</strong> Side-by-side video outputs for direct visual comparison.</p>
+                <p class="text-gray-700"><strong class="font-semibold text-gray-900">2. Performance Dashboard:</strong> Radar or bar charts visualizing rubric scores for an at-a-glance view of model strengths.</p>
+                <p class="text-gray-700"><strong class="font-semibold text-gray-900">3. Highlight Reel:</strong> A 1-2 minute edited video showcasing dramatic successes and failures, telling the story of the research.</p>
+                <p class="text-gray-700"><strong class="font-semibold text-gray-900">4. Executive Summary:</strong> A one-page report summarizing findings and recommendations.</p>
+            </div>
+        </section>
 
-    <footer>
-        <p>© 2025 Brian Hightman</p>
-    </footer>
+        <!-- Timeline -->
+        <section class="fade-in-section" style="animation-delay: 1s;">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 border-l-4 border-indigo-500 pl-4">5. Timeline & Checkpoints</h3>
+            <div class="relative pl-6">
+                <!-- Vertical line -->
+                <div class="absolute left-0 top-0 h-full w-0.5 bg-gray-200"></div>
+                <!-- Timeline items -->
+                <div class="relative mb-8">
+                    <div class="absolute left-[-27px] top-1 w-4 h-4 bg-white border-2 border-indigo-500 rounded-full"></div>
+                    <h4 class="font-semibold text-lg">Day 1: Setup & Baselines</h4>
+                    <p class="text-gray-600">Finalize prompt matrix and conduct initial tests.</p>
+                </div>
+                <div class="relative mb-8">
+                     <div class="absolute left-[-27px] top-1 w-4 h-4 bg-white border-2 border-gray-300 rounded-full"></div>
+                    <h4 class="font-semibold text-lg">Day 2: Camera & Style Testing</h4>
+                    <p class="text-gray-600">Checkpoint 1: Present initial findings to the team.</p>
+                </div>
+                <div class="relative mb-8">
+                     <div class="absolute left-[-27px] top-1 w-4 h-4 bg-white border-2 border-gray-300 rounded-full"></div>
+                    <h4 class="font-semibold text-lg">Day 3: Physics & Coherence Stress-Tests</h4>
+                    <p class="text-gray-600">Execute complex scene generation.</p>
+                </div>
+                <div class="relative">
+                     <div class="absolute left-[-27px] top-1 w-4 h-4 bg-white border-2 border-gray-300 rounded-full"></div>
+                    <h4 class="font-semibold text-lg">Day 4: Synthesis & Final Delivery</h4>
+                    <p class="text-gray-600">Produce all outputs and present final report.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-20 pt-8 border-t text-center text-gray-500 text-sm">
+            <p>&copy; 2025 Brian Hightman. All rights reserved.</p>
+            <p class="mt-1">This document outlines a proposed research framework and does not contain proprietary information from Art Official.</p>
+        </footer>
+
+    </div>
+
 </body>
 </html>
