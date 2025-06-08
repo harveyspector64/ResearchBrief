@@ -116,24 +116,46 @@
                     <tbody>
                         <tr class="border-b">
                             <td class="p-4 font-semibold text-indigo-600">Camera Control</td>
-                            <td class="p-4">Pan / Tilt / Zoom / Dolly</td>
-                            <td class="p-4 font-mono text-xs">`cinematic shot, a detective's desk.` <br> `[Slowly PAN LEFT to reveal a clue]`</td>
+                            <td class="p-4">Pan / Tilt / Zoom / Dolly / Handheld </td>
+                            <td class="p-4 font-mono text-xs">`cinematic shot, a detective's desk.` <br> `[Slowly PAN LEFT to reveal an antique phone]`</td>
+                            <td class="p-4 font-mono text-xs">`cinematic shot, a detective's desk.` <br> `[DOLLY IN to the detective sitting behind his desk]`</td>
+                            <td class="p-4 font-mono text-xs">`cinematic shot, a detective's desk.` <br> `[Slow ZOOM IN on a close-up on the detective's face]`</td>
                         </tr>
                         <tr class="border-b">
                             <td class="p-4 font-semibold text-indigo-600">Style & Aesthetics</td>
                             <td class="p-4">Genre & Artist Emulation</td>
-                            <td class="p-4 font-mono text-xs">`a car on a street at night.` <br> `[in the style of Blade Runner]`</td>
+                            <td class="p-4 font-mono text-xs">`a car on a street at night.` <br> `[shot on 35mm film in the style of Blade Runner]`</td>
+                            <td class="p-4 font-mono text-xs">`a car on a street at night.` <br> `[in the hand-drawn illustration style of 1940s Disney animation]`</td>
+                            <td class="p-4 font-mono text-xs">`a car on a street at night.` <br> `[from a pixel art video game cutscene]`</td>
                         </tr>
                         <tr class="border-b">
                             <td class="p-4 font-semibold text-indigo-600">Physics & Motion</td>
                             <td class="p-4">Object Interaction & Realism</td>
-                            <td class="p-4 font-mono text-xs">`a baseball is thrown at a window.` <br> `[The window SHATTERS on impact]`</td>
+                            <td class="p-4 font-mono text-xs">`a sandbag drops from a rooftop.` <br> `[It hits the ground and kicks up dust]`</td>
+                            <td class="p-4 font-mono text-xs">`a sandbag drops from a rooftop.` <br> `[It crashes through a car windshield]`</td>
+                            <td class="p-4 font-mono text-xs">`a sandbag drops from a rooftop.` <br> `[It falls into a backyard pool and we follow it down.]`</td>
                         </tr>
                         <tr>
                             <td class="p-4 font-semibold text-indigo-600">Character & Coherence</td>
                             <td class="p-4">Emotion & Temporal Stability</td>
                             <td class="p-4 font-mono text-xs">`close up on a character's face.` <br> `[expression subtly shifts from joy to sadness]`</td>
+                            <td class="p-4 font-mono text-xs">`close up on a character's face.` <br> `[she is smirking]`</td>
+                            <td class="p-4 font-mono text-xs">`close up on a character's face.` <br> `[he is panicking inside but putting on a brave front]`</td>
                         </tr>
+                        
+                         <tr>
+                            <td class="p-4 font-semibold text-indigo-600">Other Categories of Interest</td>
+                            <td class="p-4">Framing & Composition</td>
+                            <td class="p-4 font-mono text-xs">`close up on a character's face.` <br> `[tightly-framed from an ultra-low angle]`</td>
+                             <td class="p-4 font-mono text-xs">`establishing shot of a house on the prairie.` <br> `[extra wide shot with the house to the lower left]`</td>
+                            <td class="p-4">Lighting</td>
+                            <td class="p-4 font-mono text-xs">`wide shot of a suburban backyard at night.` <br> `[shot with natural lighting]`</td>
+                            <td class="p-4 font-mono text-xs">`wide shot of a city street at night.` <br> `[practical lighting]`</td>
+                             <td class="p-4">Lens, Camera, Film</td>
+                            <td class="p-4 font-mono text-xs">`a woman in a snowy forest` <br> `[shot with 50mm lens]`</td>
+                            <td class="p-4 font-mono text-xs">`a wild horse on the prairie` <br> `[single point of focus]`</td>
+                        </tr>
+                        
                     </tbody>
                 </table>
             </div>
@@ -145,19 +167,19 @@
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="bg-white p-6 rounded-lg shadow">
                     <h4 class="font-bold text-lg">Prompt Adherence</h4>
-                    <p class="text-gray-600 mt-1">Did the model understand the cinematic term (pan, dolly)? Did it capture the mood?</p>
+                    <p class="text-gray-600 mt-1">Did the model understand the cinematic term (pan, dolly)? Did it capture the mood? Did it adeqquately translate the subject and style you prompted?</p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow">
                     <h4 class="font-bold text-lg">Cinematic Quality</h4>
-                    <p class="text-gray-600 mt-1">Does it look like a "shot" or just a moving picture? Is composition strong?</p>
+                    <p class="text-gray-600 mt-1">Does it look like a "shot" or just a moving picture? Is composition strong? Does it have a visceral, real feel to it? If animation is it accurate, if film is it photoreal?</p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow">
                     <h4 class="font-bold text-lg">Technical Fidelity</h4>
-                    <p class="text-gray-600 mt-1">How severe are warping or flickering artifacts? Is motion smooth?</p>
+                    <p class="text-gray-600 mt-1">How severe are warping or flickering artifacts? Is motion smooth? Does it maintain coherence throughout?</p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow">
                     <h4 class="font-bold text-lg">Temporal Consistency</h4>
-                    <p class="text-gray-600 mt-1">Does a character's face remain stable? Do background objects morph?</p>
+                    <p class="text-gray-600 mt-1">Does a character's face remain stable? Do background objects morph? Does the camera move violently and arbitrarily?</p>
                 </div>
             </div>
              <p class="text-center mt-6 text-gray-600">Each metric is scored 1-5, supplemented by qualitative <strong class="font-semibold text-gray-800">"Director's Notes"</strong>.</p>
