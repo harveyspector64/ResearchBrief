@@ -66,7 +66,7 @@
             <h3 class="text-2xl font-bold text-gray-900 mb-6 border-l-4 border-indigo-500 pl-4">Conceptual Demo Reel</h3>
             <div class="bg-white p-4 rounded-lg shadow-lg">
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aTwuZh5eSnY?si=BQJwvfdXkZKXdkYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/aTwuZh5eSnY?si=BQJwvfdXkZKXdkYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
@@ -77,14 +77,14 @@
             <div class="space-y-6">
                 <div>
                     <h4 class="font-semibold text-lg text-gray-800">Philosophy</h4>
-                    <p class="text-gray-700 mt-1">Treat each model as a "Director of Photography." We provide the same scene direction (the prompt) and evaluate how they "shoot" it, testing for both technical execution and creative interpretation.</p>
+                    <p class="text-gray-700 mt-1">Treat each model as a "Director of Photography." We provide the same scene direction and evaluate how they "shoot" it, testing for both technical execution and creative interpretation across text-to-video and image-to-video workflows.</p>
                 </div>
                 <div>
                     <h4 class="font-semibold text-lg text-gray-800">Step-by-Step Process</h4>
                     <ol class="list-decimal list-inside mt-2 text-gray-700 space-y-2">
-                        <li><strong class="font-semibold">Establish 'Controlled Set':</strong> Use a curated set of base images (Midjourney v6) for Img-to-Video and a core prompt for Text-to-Video to ensure consistency.</li>
-                        <li><strong class="font-semibold">Execute 'Shot List':</strong> Systematically input test case prompts into each model, meticulously labeling and organizing all generated clips.</li>
-                        <li><strong class="font-semibold">Review 'Dailies':</strong> Evaluate each output against our rubric, combining quantitative scores with qualitative "Director's Notes."</li>
+                        <li><strong class="font-semibold">Establish 'Controlled Set':</strong> Use a curated set of base images (e.g., from Midjourney) and corresponding core prompts to ensure consistency across tests.</li>
+                        <li><strong class="font-semibold">Execute 'Shot List':</strong> For each test case, run parallel generations: one as pure text-to-video and another as image-to-video using the controlled set.</li>
+                        <li><strong class="font-semibold">Review 'Dailies':</strong> Evaluate each output against the full rubric, paying special attention to the unique demands of each workflow.</li>
                         <li><strong class="font-semibold">Synthesize for 'Final Cut':</strong> Compile findings into a single, polished report, like this webpage.</li>
                     </ol>
                 </div>
@@ -161,7 +161,7 @@
         <!-- Evaluation Rubric -->
         <section class="mb-16 fade-in-section" style="animation-delay: 0.6s;">
             <h3 class="text-2xl font-bold text-gray-900 mb-6 border-l-4 border-indigo-500 pl-4">3. Evaluation Rubric</h3>
-            <div class="grid md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="bg-white p-6 rounded-lg shadow">
                     <h4 class="font-bold text-lg">Prompt Adherence</h4>
                     <p class="text-gray-600 mt-1">Did the model understand the cinematic term? Did it capture the subject, style, and mood?</p>
@@ -177,6 +177,10 @@
                 <div class="bg-white p-6 rounded-lg shadow">
                     <h4 class="font-bold text-lg">Temporal Consistency</h4>
                     <p class="text-gray-600 mt-1">Does a character's face/body remain stable? Do background objects morph? Is camera movement controlled?</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow md:col-span-2">
+                    <h4 class="font-bold text-lg text-indigo-600">Image-to-Video Integrity</h4>
+                    <p class="text-gray-600 mt-1">How well does the model preserve the source image's style, composition, and character identity? Does it add logical motion or drift from the original concept?</p>
                 </div>
             </div>
              <p class="text-center mt-6 text-gray-600">Each metric is scored 1-5, supplemented by qualitative <strong class="font-semibold text-gray-800">"Director's Notes"</strong>.</p>
