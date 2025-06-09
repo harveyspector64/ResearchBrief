@@ -117,47 +117,38 @@
                     <tbody>
                         <tr class="border-b">
                             <td class="p-4 align-top font-semibold text-indigo-600 text-sm">Camera Control</td>
-                            <td class="p-4 align-top text-sm">Pan / Tilt / Zoom / Dolly</td>
+                            <td class="p-4 align-top text-sm">Motion Precision & Style</td>
                             <td class="p-4 font-mono text-sm leading-relaxed">
-                                `...a detective's desk. [Slowly PAN LEFT to reveal an antique phone]`<br><br>
-                                `...a detective's desk. [DOLLY IN to the detective sitting behind it]`<br><br>
-                                `...a detective's desk. [Slow ZOOM IN on a close-up on the detective's face]`
+                                `...street food market at dusk. [slow 90° pan from left to right]`<br><br>
+                                `...crowded wedding aisle. [dolly-in 5 meters towards the bride, shallow DoF]`<br><br>
+                                `...a bronze statue in a rainforest. [360° clockwise orbit]`
                             </td>
                         </tr>
                         <tr class="border-b">
                             <td class="p-4 align-top font-semibold text-indigo-600 text-sm">Style & Aesthetics</td>
-                            <td class="p-4 align-top text-sm">Genre & Artist Emulation</td>
+                            <td class="p-4 align-top text-sm">Genre & Medium Emulation</td>
                             <td class="p-4 font-mono text-sm leading-relaxed">
-                                `a car on a street at night. [shot on 35mm film, style of Blade Runner]`<br><br>
-                                `a car on a street at night. [hand-drawn illustration style of 1940s Disney]`<br><br>
-                                `a car on a street at night. [from a pixel art video game cutscene]`
+                                `...sunset desert highway. [shot on 35mm film, Kodak 5219 grain]`<br><br>
+                                `...cityscape at night. [in the style of an ink-wash ukiyo-e print]`<br><br>
+                                `...a dog chasing a ball. [stylized stop-motion claymation]`
                             </td>
                         </tr>
                         <tr class="border-b">
                             <td class="p-4 align-top font-semibold text-indigo-600 text-sm">Physics & Motion</td>
                             <td class="p-4 align-top text-sm">Object Interaction & Realism</td>
                             <td class="p-4 font-mono text-sm leading-relaxed">
-                                `a sandbag drops from a rooftop. [It hits the ground and kicks up dust]`<br><br>
-                                `a sandbag drops from a rooftop. [It crashes through a car windshield]`<br><br>
-                                `a sandbag drops from a rooftop. [It falls into a pool, we follow it down]`
-                            </td>
-                        </tr>
-                         <tr class="border-b">
-                            <td class="p-4 align-top font-semibold text-indigo-600 text-sm">Character & Coherence</td>
-                            <td class="p-4 align-top text-sm">Emotion & Stability</td>
-                            <td class="p-4 font-mono text-sm leading-relaxed">
-                                `close up on her face. [expression shifts subtly from joy to sadness]`<br><br>
-                                `close up on her face. [she is smirking]`<br><br>
-                                `close up on his face. [he is panicking inside but putting on a brave front]`
+                                `...a baseball shatters a glass window, showing shards.`<br><br>
+                                `...a jelly cube drops onto a hard floor.`<br><br>
+                                `...a large flag unfurls on a windy hilltop.`
                             </td>
                         </tr>
                         <tr>
-                            <td class="p-4 align-top font-semibold text-indigo-600 text-sm">Other Dimensions</td>
-                            <td class="p-4 align-top text-sm">Framing / Lighting / Lens</td>
+                            <td class="p-4 align-top font-semibold text-indigo-600 text-sm">Character & Coherence</td>
+                            <td class="p-4 align-top text-sm">Emotion & Stability</td>
                             <td class="p-4 font-mono text-sm leading-relaxed">
-                                `a house on the prairie. [extra wide shot, house to the lower left]`<br><br>
-                                `a suburban backyard at night. [shot with only natural moonlight]`<br><br>
-                                `a woman in a snowy forest. [shot with a 50mm lens]`
+                                `...close up on her face. [expression shifts subtly from joy to sadness]`<br><br>
+                                `...close up on her face. [she is smirking]`<br><br>
+                                `...close up on his face. [he is panicking inside but putting on a brave front]`
                             </td>
                         </tr>
                     </tbody>
@@ -168,6 +159,11 @@
         <!-- Evaluation Rubric -->
         <section class="mb-16 fade-in-section" style="animation-delay: 0.6s;">
             <h3 class="text-2xl font-bold text-gray-900 mb-6 border-l-4 border-indigo-500 pl-4">3. Evaluation Rubric</h3>
+             <div class="mb-4 text-center text-sm text-gray-500">
+                <span class="inline-block w-4 h-4 bg-red-500 rounded-sm align-middle mr-1"></span> Poor (1-2)
+                <span class="inline-block w-4 h-4 bg-amber-400 rounded-sm align-middle ml-4 mr-1"></span> Adequate (2.1-3.4)
+                <span class="inline-block w-4 h-4 bg-green-500 rounded-sm align-middle ml-4 mr-1"></span> Excellent (3.5-5)
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="bg-white p-6 rounded-lg shadow rubric-card">
                     <h4 class="font-bold text-lg">Prompt Adherence</h4>
@@ -190,7 +186,7 @@
                     <p class="text-gray-600 mt-1">How well does the model preserve the source image's style, composition, and character identity? Does it add logical motion or drift from the original concept?</p>
                 </div>
             </div>
-             <p class="text-center mt-6 text-gray-600">Each metric is scored 1-5, supplemented by qualitative <strong class="font-semibold text-gray-800">"Expert Notes"</strong>.</p>
+             <p class="text-center mt-6 text-gray-600">Each metric is scored 1-5, supplemented by qualitative <strong class="font-semibold text-gray-800">"Expert Notes."</strong> For the full analysis, scores can be aggregated and visualized in a heatmap to provide an at-a-glance comparison of each model's core competencies.</p>
         </section>
 
         <!-- Final Deliverable -->
