@@ -36,6 +36,13 @@
             width: 100%;
             height: 100%;
         }
+        .rubric-card {
+            transition: all 0.2s ease-in-out;
+        }
+        .rubric-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px 0 rgb(0 0 0 / 0.07);
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -49,7 +56,7 @@
             <div class="mt-6 text-sm">
                 <p><span class="font-semibold">To:</span> Tatiana & Nick St. Pierre</p>
                 <p><span class="font-semibold">From:</span> Brian Hightman</p>
-                <p><span class="font-semibold">Date:</span> June 8, 2025</p>
+                <p><span class="font-semibold">Date:</span> June 9, 2025</p>
             </div>
         </header>
 
@@ -99,55 +106,55 @@
         <section class="mb-16 fade-in-section" style="animation-delay: 0.4s;">
             <h3 class="text-2xl font-bold text-gray-900 mb-6 border-l-4 border-indigo-500 pl-4">2. Prompt Matrix / Test Cases</h3>
             <div class="overflow-x-auto bg-white rounded-lg shadow">
-                <table class="w-full text-left text-sm">
+                <table class="w-full text-left">
                     <thead class="bg-gray-100 border-b">
                         <tr>
-                            <th class="p-4 font-semibold">Category</th>
-                            <th class="p-4 font-semibold">Core Goal</th>
-                            <th class="p-4 font-semibold">Example Prompts</th>
+                            <th class="p-4 font-semibold text-sm">Category</th>
+                            <th class="p-4 font-semibold text-sm">Core Goal</th>
+                            <th class="p-4 font-semibold text-sm">Example Prompts</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="border-b">
-                            <td class="p-4 align-top font-semibold text-indigo-600">Camera Control</td>
-                            <td class="p-4 align-top">Pan / Tilt / Zoom / Dolly</td>
-                            <td class="p-4 font-mono text-xs leading-relaxed">
+                            <td class="p-4 align-top font-semibold text-indigo-600 text-sm">Camera Control</td>
+                            <td class="p-4 align-top text-sm">Pan / Tilt / Zoom / Dolly</td>
+                            <td class="p-4 font-mono text-sm leading-relaxed">
                                 `...a detective's desk. [Slowly PAN LEFT to reveal an antique phone]`<br><br>
                                 `...a detective's desk. [DOLLY IN to the detective sitting behind it]`<br><br>
                                 `...a detective's desk. [Slow ZOOM IN on a close-up on the detective's face]`
                             </td>
                         </tr>
                         <tr class="border-b">
-                            <td class="p-4 align-top font-semibold text-indigo-600">Style & Aesthetics</td>
-                            <td class="p-4 align-top">Genre & Artist Emulation</td>
-                            <td class="p-4 font-mono text-xs leading-relaxed">
+                            <td class="p-4 align-top font-semibold text-indigo-600 text-sm">Style & Aesthetics</td>
+                            <td class="p-4 align-top text-sm">Genre & Artist Emulation</td>
+                            <td class="p-4 font-mono text-sm leading-relaxed">
                                 `a car on a street at night. [shot on 35mm film, style of Blade Runner]`<br><br>
                                 `a car on a street at night. [hand-drawn illustration style of 1940s Disney]`<br><br>
                                 `a car on a street at night. [from a pixel art video game cutscene]`
                             </td>
                         </tr>
                         <tr class="border-b">
-                            <td class="p-4 align-top font-semibold text-indigo-600">Physics & Motion</td>
-                            <td class="p-4 align-top">Object Interaction & Realism</td>
-                            <td class="p-4 font-mono text-xs leading-relaxed">
+                            <td class="p-4 align-top font-semibold text-indigo-600 text-sm">Physics & Motion</td>
+                            <td class="p-4 align-top text-sm">Object Interaction & Realism</td>
+                            <td class="p-4 font-mono text-sm leading-relaxed">
                                 `a sandbag drops from a rooftop. [It hits the ground and kicks up dust]`<br><br>
                                 `a sandbag drops from a rooftop. [It crashes through a car windshield]`<br><br>
                                 `a sandbag drops from a rooftop. [It falls into a pool, we follow it down]`
                             </td>
                         </tr>
                          <tr class="border-b">
-                            <td class="p-4 align-top font-semibold text-indigo-600">Character & Coherence</td>
-                            <td class="p-4 align-top">Emotion & Stability</td>
-                            <td class="p-4 font-mono text-xs leading-relaxed">
+                            <td class="p-4 align-top font-semibold text-indigo-600 text-sm">Character & Coherence</td>
+                            <td class="p-4 align-top text-sm">Emotion & Stability</td>
+                            <td class="p-4 font-mono text-sm leading-relaxed">
                                 `close up on her face. [expression shifts subtly from joy to sadness]`<br><br>
                                 `close up on her face. [she is smirking]`<br><br>
                                 `close up on his face. [he is panicking inside but putting on a brave front]`
                             </td>
                         </tr>
                         <tr>
-                            <td class="p-4 align-top font-semibold text-indigo-600">Other Dimensions</td>
-                            <td class="p-4 align-top">Framing / Lighting / Lens</td>
-                            <td class="p-4 font-mono text-xs leading-relaxed">
+                            <td class="p-4 align-top font-semibold text-indigo-600 text-sm">Other Dimensions</td>
+                            <td class="p-4 align-top text-sm">Framing / Lighting / Lens</td>
+                            <td class="p-4 font-mono text-sm leading-relaxed">
                                 `a house on the prairie. [extra wide shot, house to the lower left]`<br><br>
                                 `a suburban backyard at night. [shot with only natural moonlight]`<br><br>
                                 `a woman in a snowy forest. [shot with a 50mm lens]`
@@ -162,23 +169,23 @@
         <section class="mb-16 fade-in-section" style="animation-delay: 0.6s;">
             <h3 class="text-2xl font-bold text-gray-900 mb-6 border-l-4 border-indigo-500 pl-4">3. Evaluation Rubric</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow">
+                <div class="bg-white p-6 rounded-lg shadow rubric-card">
                     <h4 class="font-bold text-lg">Prompt Adherence</h4>
                     <p class="text-gray-600 mt-1">Did the model understand the prompt's intent? Did it capture the subject, style, and mood?</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow">
+                <div class="bg-white p-6 rounded-lg shadow rubric-card">
                     <h4 class="font-bold text-lg">Visual & Aesthetic Quality</h4>
                     <p class="text-gray-600 mt-1">Does the output have strong visual appeal? Is the composition effective? Does it successfully achieve the intended aesthetic?</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow">
+                <div class="bg-white p-6 rounded-lg shadow rubric-card">
                     <h4 class="font-bold text-lg">Technical Fidelity</h4>
                     <p class="text-gray-600 mt-1">How severe are warping or flickering artifacts? Is motion smooth and coherent throughout the clip?</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow">
+                <div class="bg-white p-6 rounded-lg shadow rubric-card">
                     <h4 class="font-bold text-lg">Temporal Consistency</h4>
                     <p class="text-gray-600 mt-1">Does a character's face/body remain stable? Do background objects morph? Is camera movement controlled?</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow md:col-span-2">
+                <div class="bg-white p-6 rounded-lg shadow md:col-span-2 rubric-card">
                     <h4 class="font-bold text-lg text-indigo-600">Image-to-Video Integrity</h4>
                     <p class="text-gray-600 mt-1">How well does the model preserve the source image's style, composition, and character identity? Does it add logical motion or drift from the original concept?</p>
                 </div>
@@ -225,7 +232,8 @@
 
         <!-- Footer -->
         <footer class="mt-20 pt-8 border-t text-center text-gray-500 text-sm">
-            <p>This document outlines a proposed research framework and does not contain proprietary information from Art Official.</p>
+            <p>&copy; 2025 Brian Hightman. All rights reserved.</p>
+            <p class="mt-1">This document outlines a proposed research framework and does not contain proprietary information from Art Official.</p>
         </footer>
 
     </div>
